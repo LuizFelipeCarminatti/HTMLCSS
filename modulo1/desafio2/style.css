@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #1D1D1D;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+}
+
+article#tambs{
+    width: 405px;
+    margin: auto;
+}
+#video{
+    margin: auto;
+    width: 560px;
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
+img#voltar{
+    position: absolute;
+    left: 50%;
+}

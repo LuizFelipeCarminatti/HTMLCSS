@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Media Query</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightgray;
+        }
+        header{
+            background-color: rgb(79, 78, 78);
+        }
+        header h1{
+            text-align: center;
+            padding: 10px;
+        }
+        menu{
+            display: none;
+        }
+        menu ul{
+            list-style: none;
+        }
+        menu ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #292727;
+        }
+        main{
+            width: 90%;
+            background-color: #fff;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        #burguer{
+            background-color: #272727;
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        article h2{
+            padding: 20px;
+        }
+
+        article p {
+            text-align: justify;
+            margin-bottom: 20px;
+            text-indent: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            #menu{
+                display: block;
+            }
+            #burguer{
+                display: none;
+            }
+            #menu ul li{
+                display: inline-block;
+            }
+            main{
+                width: 768px
+            }
+        }
+    </style>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu  id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nam suscipit facilis architecto temporibus ad officia, provident, quasi modi voluptate recusandae aliquid illum eveniet quod dolor dicta, minima distinctio odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil recusandae molestiae, rem enim explicabo? Fugiat, magni sequi hic perspiciatis quasi unde? Molestias inventore, quo aliquid omnis possimus deserunt alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nesciunt! Laudantium excepturi dignissimos quod animi, enim voluptas, quidem sunt ipsam doloribus eos corrupti qui atque, eveniet impedit. Dolorem, rem accusantium!
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam incidunt culpa odio, placeat est necessitatibus doloribus qui eos deleniti, ex ullam, ab beatae fuga vitae illum? Ducimus, quaerat. Quis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum mollitia, voluptatem quis blanditiis vero? Recusandae, quasi explicabo? Soluta illum consequuntur minus harum exercitationem? Molestias dolor ab voluptatem error tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae in veritatis ea repudiandae architecto voluptatem earum culpa quas deserunt ducimus, at, alias non necessitatibus voluptatibus expedita. Magni dicta dignissimos sint.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat porro tempora fugit fuga consectetur quidem? Fugiat eos error minima vero, quis assumenda mollitia, porro sit quibusdam soluta, asperiores dolorem officia.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae esse nam dolore dolorum vel placeat recusandae. Consectetur optio aperiam aut perferendis nostrum? Dicta odio dolor accusantium, in obcaecati atque maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nostrum praesentium sint id officia, aspernatur veritatis velit ipsum cum labore odit incidunt magni nobis molestiae recusandae, minima corporis quaerat unde?
+            </p>
+        </article>
+    </main>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
+            }else{
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

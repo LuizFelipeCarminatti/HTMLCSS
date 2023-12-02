@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        iframe{
+            width: 500px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500px" scolling="no" sandbox="sandbox" referrerpolicy="no-referrer">
+            <a href="https://www.cursoemvideo.com/" target="_blank">Curso em video</a>
+        </iframe>
+        para aprender a programar
+    </p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16605.573594374677!2d-51.24055503072686!3d-30.02976627149354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e4d043eab%3A0x769a0820bae18fd4!2sCentro%20Hist%C3%B3rico%2C%20Porto%20Alegre%20-%20RS!5e1!3m2!1spt-PT!2sbr!4v1701290099598!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Para funcionar o formulario sandbox="allow-same-origin allow-forms allow-scripts" -->
+
+    <iframe src="https://www.google.com.br/" frameborder="0"></iframe> <!-- existe sites que não deixam exibir em iframe de terceiros -->
+</body>
+</html>

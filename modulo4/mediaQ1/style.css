@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (orientation: portrait) {
+    body{
+        background-image: url('cev-portrait.jpg');
+        background-position: center bottom;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body{
+        background-image: url('cev-landscape.jpg');
+        background-position: left bottom;
+    }
+}
